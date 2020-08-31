@@ -2,10 +2,10 @@
 
     Dim p As New Empresa.Persona
     Private Sub bttnBuscar_Click(sender As Object, e As EventArgs) Handles bttnBuscar.Click
+        dgvModifP.Visible() = True
         If txtci.Text = "" Then
             dgvModifP.DataSource = p.listado()
         Else
-            dgvModifP.Visible() = True
             dgvModifP.DataSource = p.Buscar(txtci.Text)
         End If
         mostrarTodo()

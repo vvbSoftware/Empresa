@@ -22,7 +22,7 @@ Public Class DBempleado
     End Function
 
     Public Function DeleteEmpelado(id As String) As Boolean
-        Dim consulta As String = "Delete from Empleados where idEmp=" & id & ";"
+        Dim consulta As String = "Delete from Empleados where id_empleado='" & id.ToString & "';"
         Try
             db.consultaEjecutar(consulta)
             Return True
@@ -33,13 +33,29 @@ Public Class DBempleado
     End Function
 
     Public Function ObtenerTipoEmp() As DataTable
-        Dim consulta As String = "select * from tipos_empleados"
+        Dim consulta As String = "select tipo_empleado from tipos_empleados"
         Return db.DevolverTabla(consulta)
     End Function
 
     Public Function listarEmp() As DataTable
-        Dim consulta As String = "select E.id_persona,id_empleado,cedula,primer_nombre,primer_apellido,segundo_apellido,sueldoMens,telefono,direccion from empleados E,tipos_empleados,personas P where P.id_persona=E.id_persona and id_tipo=id_tipo_empleado"
+        Dim consulta As String = "select E.id_persona,id_empleado,cedula,primer_nombre,primer_apellido,tipo_empleado,sueldoMens,telefono,direccion from empleados E,tipos_empleados,personas P where P.id_persona=E.id_persona and id_tipo=id_tipo_empleado"
         Return db.DevolverTabla(consulta)
+    End Function
+
+    Public Function buscar(id As String) As DataTable
+        Dim consulta As String
+        If (id = "") Then
+            consulta = "select * from empleados;"
+        Else
+            consulta = "select * from empleados where id_empleado=" & id.ToString & ";"
+        End If
+
+        Return db.DevolverTabla(consulta)
+    End Function
+
+    Public Function modificar(idEmp As String, Sueldo As String) As Boolean
+        Dim consulta As String = "update empleados set sueldoMens='" & Sueldo.ToString & "' where id_empleado='" & idEmp & "';"
+        Return db.consultaEjecutar(consulta)
     End Function
 
     'Public Function tablaTipoEmp() As DataSet

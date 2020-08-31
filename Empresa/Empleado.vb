@@ -1,4 +1,5 @@
 ﻿Imports System.Windows.Forms
+Imports DataBaseAccess
 Imports DataBaseAccess.DBempleado
 Public Class Empleado : Inherits Persona
     Private idTipo As Integer
@@ -18,7 +19,7 @@ Public Class Empleado : Inherits Persona
     Public Sub New()
     End Sub
 
-    Dim dbe As New DataBaseAccess.DBempleado
+    Dim dbe As New DBempleado
 
     Public Function addEmpleado(ci) As Boolean
         Return dbe.InsertEmpleado(ci, Me.idTipo, Me.sueldoMensual)
@@ -30,6 +31,19 @@ Public Class Empleado : Inherits Persona
 
     Public Function cargarEmpleados()
         Return dbe.listarEmp()
+    End Function
+
+    Public Function elimEmp(idEmp) As Boolean
+        Return dbe.DeleteEmpelado(idEmp)
+    End Function
+
+
+    Public Function buscarEmp(idEmp)
+        Return dbe.buscar(idEmp)
+    End Function
+
+    Public Function modifEm(id, sueldo)
+        Return dbe.modificar(id, sueldo)
     End Function
 
     'Public Sub cargarComboBox(cb As ComboBox)

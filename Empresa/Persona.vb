@@ -1,4 +1,6 @@
-﻿Public Class Persona
+﻿Imports DataBaseAccess
+
+Public Class Persona
     Private ciPersona As String
     'Private foto As String
     Private pNom As String
@@ -26,7 +28,7 @@
 
 
 
-    Dim dbp As New DataBaseAccess.DBpersona
+    Dim dbp As New DBpersona
 
     Public Function addPersona() As Boolean
         Return dbp.InsertPersona(Me.ciPersona,' Me.foto,'

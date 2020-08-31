@@ -58,9 +58,9 @@ Partial Class frmBajaE
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label1.Location = New System.Drawing.Point(12, 133)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(428, 16)
+        Me.Label1.Size = New System.Drawing.Size(427, 16)
         Me.Label1.TabIndex = 26
-        Me.Label1.Text = "Seleccione con doble click al emleado que desea eliminar:"
+        Me.Label1.Text = "Seleccione con doble click al empleado que desea eliminar:"
         '
         'btnElim
         '
@@ -70,6 +70,7 @@ Partial Class frmBajaE
         Me.btnElim.TabIndex = 27
         Me.btnElim.Text = "Eliminar Empleado"
         Me.btnElim.UseVisualStyleBackColor = True
+        Me.btnElim.Visible = False
         '
         'frmBajaE
         '
