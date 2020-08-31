@@ -19,8 +19,14 @@
             MsgBox("Debe ingresar una cédula valida!")
         Else
             dgvPersona.Visible() = True
-            dgvPersona.DataSource = p.Buscar(txtci.Text)
+            Try
+                dgvPersona.DataSource = p.Buscar(txtci.Text)
+            Catch ex As Exception
+                MsgBox("Error al conectar a la BD")
+            End Try
+
         End If
 
     End Sub
+
 End Class

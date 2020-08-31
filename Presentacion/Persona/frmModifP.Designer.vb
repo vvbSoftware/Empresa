@@ -71,7 +71,7 @@ Partial Class frmModifP
         Me.dgvModifP.Location = New System.Drawing.Point(11, 212)
         Me.dgvModifP.Name = "dgvModifP"
         Me.dgvModifP.ReadOnly = True
-        Me.dgvModifP.Size = New System.Drawing.Size(957, 202)
+        Me.dgvModifP.Size = New System.Drawing.Size(966, 202)
         Me.dgvModifP.TabIndex = 24
         '
         'bttnBuscar
@@ -340,7 +340,7 @@ Partial Class frmModifP
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(977, 641)
+        Me.ClientSize = New System.Drawing.Size(989, 636)
         Me.Controls.Add(Me.txtFoto)
         Me.Controls.Add(Me.lblFot)
         Me.Controls.Add(Me.txtIdP)

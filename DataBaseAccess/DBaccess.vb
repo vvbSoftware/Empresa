@@ -57,5 +57,27 @@ Public Class DBaccess
         Return dt
     End Function
 
+    'Public Function DevolverParaComboBox(consulta As String) As DataSet
+    '    Dim dataSet As New DataSet
+    '    Dim adapter As MySqlDataAdapter
+    '    Dim commadnSQL As MySqlCommand
+
+    '    Try
+    '        conn.Open()
+    '        commadnSQL = New MySqlCommand()
+    '        commadnSQL.CommandText = consulta
+    '        commadnSQL.CommandType = CommandType.Text
+    '        commadnSQL.Connection = conn
+
+    '        adapter = New MySqlDataAdapter(commadnSQL)
+    '        adapter.Fill(dataSet)
+    '        conn.Close()
+    '    Catch ex As Exception
+    '        MsgBox("Error:: " & ex.Message)
+    '        conn.Close()
+    '    End Try
+    '    Return dataSet
+    'End Function
+
 
 End Class

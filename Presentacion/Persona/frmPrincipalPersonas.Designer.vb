@@ -37,12 +37,8 @@ Partial Class frmPrincipalPersonas
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(3, 4)
+        resources.ApplyResources(Me.PictureBox1, "PictureBox1")
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(232, 139)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
         'Panel1
@@ -54,26 +50,17 @@ Partial Class frmPrincipalPersonas
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.btnListarP)
         Me.Panel1.Controls.Add(Me.btnModifP)
-        Me.Panel1.Location = New System.Drawing.Point(0, -1)
+        resources.ApplyResources(Me.Panel1, "Panel1")
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(239, 676)
-        Me.Panel1.TabIndex = 9
         '
         'btnSalir
         '
         Me.btnSalir.FlatAppearance.BorderSize = 0
         Me.btnSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSalir.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        resources.ApplyResources(Me.btnSalir, "btnSalir")
         Me.btnSalir.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnSalir.Image = CType(resources.GetObject("btnSalir.Image"), System.Drawing.Image)
-        Me.btnSalir.Location = New System.Drawing.Point(0, 623)
         Me.btnSalir.Name = "btnSalir"
-        Me.btnSalir.Size = New System.Drawing.Size(216, 53)
-        Me.btnSalir.TabIndex = 5
-        Me.btnSalir.Text = "Volver al menu de inicio"
-        Me.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnSalir.UseVisualStyleBackColor = True
         '
         'btnElimP
@@ -81,16 +68,9 @@ Partial Class frmPrincipalPersonas
         Me.btnElimP.FlatAppearance.BorderSize = 0
         Me.btnElimP.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.btnElimP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.btnElimP.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnElimP.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        resources.ApplyResources(Me.btnElimP, "btnElimP")
         Me.btnElimP.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnElimP.Image = CType(resources.GetObject("btnElimP.Image"), System.Drawing.Image)
-        Me.btnElimP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnElimP.Location = New System.Drawing.Point(12, 324)
         Me.btnElimP.Name = "btnElimP"
-        Me.btnElimP.Size = New System.Drawing.Size(215, 40)
-        Me.btnElimP.TabIndex = 4
-        Me.btnElimP.Text = "Eliminar Personas"
         Me.btnElimP.UseVisualStyleBackColor = True
         '
         'btnAddPer
@@ -98,16 +78,9 @@ Partial Class frmPrincipalPersonas
         Me.btnAddPer.FlatAppearance.BorderSize = 0
         Me.btnAddPer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.btnAddPer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.btnAddPer.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnAddPer.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        resources.ApplyResources(Me.btnAddPer, "btnAddPer")
         Me.btnAddPer.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnAddPer.Image = CType(resources.GetObject("btnAddPer.Image"), System.Drawing.Image)
-        Me.btnAddPer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAddPer.Location = New System.Drawing.Point(12, 181)
         Me.btnAddPer.Name = "btnAddPer"
-        Me.btnAddPer.Size = New System.Drawing.Size(215, 40)
-        Me.btnAddPer.TabIndex = 1
-        Me.btnAddPer.Text = "Agregar Persona"
         Me.btnAddPer.UseVisualStyleBackColor = True
         '
         'btnListarP
@@ -115,16 +88,9 @@ Partial Class frmPrincipalPersonas
         Me.btnListarP.FlatAppearance.BorderSize = 0
         Me.btnListarP.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.btnListarP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.btnListarP.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnListarP.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        resources.ApplyResources(Me.btnListarP, "btnListarP")
         Me.btnListarP.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnListarP.Image = CType(resources.GetObject("btnListarP.Image"), System.Drawing.Image)
-        Me.btnListarP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnListarP.Location = New System.Drawing.Point(12, 393)
         Me.btnListarP.Name = "btnListarP"
-        Me.btnListarP.Size = New System.Drawing.Size(215, 40)
-        Me.btnListarP.TabIndex = 3
-        Me.btnListarP.Text = "Listar Personas"
         Me.btnListarP.UseVisualStyleBackColor = True
         '
         'btnModifP
@@ -132,36 +98,26 @@ Partial Class frmPrincipalPersonas
         Me.btnModifP.FlatAppearance.BorderSize = 0
         Me.btnModifP.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.btnModifP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.btnModifP.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnModifP.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        resources.ApplyResources(Me.btnModifP, "btnModifP")
         Me.btnModifP.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnModifP.Image = CType(resources.GetObject("btnModifP.Image"), System.Drawing.Image)
-        Me.btnModifP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnModifP.Location = New System.Drawing.Point(12, 254)
         Me.btnModifP.Name = "btnModifP"
-        Me.btnModifP.Size = New System.Drawing.Size(215, 40)
-        Me.btnModifP.TabIndex = 2
-        Me.btnModifP.Text = "Modificar Personas"
         Me.btnModifP.UseVisualStyleBackColor = True
         '
         'panelPer
         '
         Me.panelPer.BackColor = System.Drawing.Color.Transparent
-        Me.panelPer.BackgroundImage = CType(resources.GetObject("panelPer.BackgroundImage"), System.Drawing.Image)
-        Me.panelPer.Location = New System.Drawing.Point(239, 0)
+        resources.ApplyResources(Me.panelPer, "panelPer")
         Me.panelPer.Name = "panelPer"
-        Me.panelPer.Size = New System.Drawing.Size(1005, 675)
-        Me.panelPer.TabIndex = 10
         '
         'frmPrincipalPersonas
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1238, 678)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.panelPer)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.HelpButton = True
         Me.Name = "frmPrincipalPersonas"
-        Me.Text = "frmPrincipalPersonas"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)

@@ -202,6 +202,9 @@
     <EmbeddedResource Include="Persona\frmModifP.resx">
       <DependentUpon>frmModifP.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Persona\frmPrincipalPersonas.aa.resx">
+      <DependentUpon>frmPrincipalPersonas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Persona\frmPrincipalPersonas.resx">
       <DependentUpon>frmPrincipalPersonas.vb</DependentUpon>
     </EmbeddedResource>

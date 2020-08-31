@@ -32,9 +32,9 @@ Partial Class frmListarP
         'dgvListado
         '
         Me.dgvListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvListado.Location = New System.Drawing.Point(8, 186)
+        Me.dgvListado.Location = New System.Drawing.Point(9, 186)
         Me.dgvListado.Name = "dgvListado"
-        Me.dgvListado.Size = New System.Drawing.Size(783, 252)
+        Me.dgvListado.Size = New System.Drawing.Size(969, 438)
         Me.dgvListado.TabIndex = 0
         Me.dgvListado.Visible = False
         '
@@ -44,7 +44,7 @@ Partial Class frmListarP
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Bookman Old Style", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label2.Location = New System.Drawing.Point(301, 9)
+        Me.Label2.Location = New System.Drawing.Point(392, 9)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(227, 24)
         Me.Label2.TabIndex = 33
@@ -66,7 +66,7 @@ Partial Class frmListarP
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(989, 636)
         Me.Controls.Add(Me.bttnBuscar)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.dgvListado)

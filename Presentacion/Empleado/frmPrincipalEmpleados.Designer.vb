@@ -56,7 +56,7 @@ Partial Class frmPrincipalEmpleados
         Me.Panel1.Controls.Add(Me.btnModif)
         Me.Panel1.Location = New System.Drawing.Point(1, -2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(239, 512)
+        Me.Panel1.Size = New System.Drawing.Size(239, 673)
         Me.Panel1.TabIndex = 11
         '
         'btnVolver
@@ -69,7 +69,7 @@ Partial Class frmPrincipalEmpleados
         Me.btnVolver.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnVolver.Image = CType(resources.GetObject("btnVolver.Image"), System.Drawing.Image)
         Me.btnVolver.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnVolver.Location = New System.Drawing.Point(0, 460)
+        Me.btnVolver.Location = New System.Drawing.Point(0, 620)
         Me.btnVolver.Name = "btnVolver"
         Me.btnVolver.Size = New System.Drawing.Size(216, 53)
         Me.btnVolver.TabIndex = 6
@@ -149,9 +149,9 @@ Partial Class frmPrincipalEmpleados
         '
         Me.panelEmp.BackColor = System.Drawing.Color.Transparent
         Me.panelEmp.BackgroundImage = CType(resources.GetObject("panelEmp.BackgroundImage"), System.Drawing.Image)
-        Me.panelEmp.Location = New System.Drawing.Point(240, -1)
+        Me.panelEmp.Location = New System.Drawing.Point(240, 0)
         Me.panelEmp.Name = "panelEmp"
-        Me.panelEmp.Size = New System.Drawing.Size(561, 512)
+        Me.panelEmp.Size = New System.Drawing.Size(1005, 675)
         Me.panelEmp.TabIndex = 12
         '
         'frmPrincipalEmpleados
@@ -159,11 +159,12 @@ Partial Class frmPrincipalEmpleados
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.ClientSize = New System.Drawing.Size(800, 510)
+        Me.ClientSize = New System.Drawing.Size(1244, 671)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.panelEmp)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmPrincipalEmpleados"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "frmPrincipalEmpleados"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)

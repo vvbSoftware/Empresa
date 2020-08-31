@@ -25,13 +25,13 @@ Partial Class frmListarE
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmListarE))
         Me.SuspendLayout()
         '
-        'frmListar
+        'frmListarE
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(544, 467)
-        Me.Name = "frmListar"
+        Me.ClientSize = New System.Drawing.Size(989, 636)
+        Me.Name = "frmListarE"
         Me.Text = "frmListar"
         Me.ResumeLayout(False)
 

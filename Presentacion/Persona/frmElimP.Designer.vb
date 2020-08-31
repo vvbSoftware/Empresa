@@ -36,7 +36,7 @@ Partial Class frmElimP
         'bttnElimP
         '
         Me.bttnElimP.Font = New System.Drawing.Font("Elephant", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bttnElimP.Location = New System.Drawing.Point(280, 370)
+        Me.bttnElimP.Location = New System.Drawing.Point(399, 389)
         Me.bttnElimP.Name = "bttnElimP"
         Me.bttnElimP.Size = New System.Drawing.Size(186, 51)
         Me.bttnElimP.TabIndex = 26
@@ -92,7 +92,7 @@ Partial Class frmElimP
         Me.dgvPersona.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvPersona.Location = New System.Drawing.Point(12, 177)
         Me.dgvPersona.Name = "dgvPersona"
-        Me.dgvPersona.Size = New System.Drawing.Size(718, 94)
+        Me.dgvPersona.Size = New System.Drawing.Size(965, 94)
         Me.dgvPersona.TabIndex = 31
         Me.dgvPersona.Visible = False
         '
@@ -102,7 +102,7 @@ Partial Class frmElimP
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Bookman Old Style", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label2.Location = New System.Drawing.Point(222, 9)
+        Me.Label2.Location = New System.Drawing.Point(418, 9)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(192, 24)
         Me.Label2.TabIndex = 32
@@ -113,7 +113,7 @@ Partial Class frmElimP
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(762, 463)
+        Me.ClientSize = New System.Drawing.Size(989, 636)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.dgvPersona)
         Me.Controls.Add(Me.bttnBuscar)

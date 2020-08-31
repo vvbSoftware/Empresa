@@ -13,7 +13,11 @@
         PanelChildForm.Tag = childForm
         'muestro el form
         childForm.BringToFront()
-        childForm.Show()
+        Try
+            childForm.Show()
+        Catch ex As Exception
+        End Try
+
     End Sub
 
     Private Sub btnGestionP_Click(sender As Object, e As EventArgs) Handles btnGestionP.Click
@@ -23,7 +27,7 @@
 
     Private Sub btnGestionE_Click(sender As Object, e As EventArgs) Handles btnGestionE.Click
         Me.Hide()
-        frmPrincipalPersonas.Show()
+        frmPrincipalEmpleados.Show()
     End Sub
 
     Private Sub btnGestionA_Click(sender As Object, e As EventArgs) Handles btnGestionA.Click

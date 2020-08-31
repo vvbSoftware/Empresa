@@ -22,14 +22,16 @@ Partial Class frmModifE
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmModifE))
         Me.SuspendLayout()
         '
-        'frmModif
+        'frmModifE
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(544, 467)
-        Me.Name = "frmModif"
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(989, 636)
+        Me.Name = "frmModifE"
         Me.Text = "Modif"
         Me.ResumeLayout(False)
 
