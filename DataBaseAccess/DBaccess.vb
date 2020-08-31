@@ -34,13 +34,13 @@ Public Class DBaccess
             conn.Close()
             Return True
         Catch ex As Exception
-            MsgBox("ERROR::" & ex.Message)
-            Return False
+            MsgBox("ERROR COMPRUEBE LA CONEXIÓN A INTERNET::" & ex.Message)
             conn.Close()
+            Return False
         End Try
     End Function
 
-    Public Function ListarTabla(consulta) As DataTable
+    Public Function DevolverTabla(consulta) As DataTable
         Dim dt As New DataTable
         Dim ds As New DataSet
         Dim da As New MySqlDataAdapter

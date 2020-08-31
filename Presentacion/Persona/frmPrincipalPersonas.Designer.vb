@@ -56,7 +56,7 @@ Partial Class frmPrincipalPersonas
         Me.Panel1.Controls.Add(Me.btnModifP)
         Me.Panel1.Location = New System.Drawing.Point(0, -1)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(239, 512)
+        Me.Panel1.Size = New System.Drawing.Size(239, 676)
         Me.Panel1.TabIndex = 9
         '
         'btnSalir
@@ -68,8 +68,7 @@ Partial Class frmPrincipalPersonas
         Me.btnSalir.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSalir.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnSalir.Image = CType(resources.GetObject("btnSalir.Image"), System.Drawing.Image)
-        Me.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnSalir.Location = New System.Drawing.Point(-1, 461)
+        Me.btnSalir.Location = New System.Drawing.Point(0, 623)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(216, 53)
         Me.btnSalir.TabIndex = 5
@@ -151,14 +150,14 @@ Partial Class frmPrincipalPersonas
         Me.panelPer.BackgroundImage = CType(resources.GetObject("panelPer.BackgroundImage"), System.Drawing.Image)
         Me.panelPer.Location = New System.Drawing.Point(239, 0)
         Me.panelPer.Name = "panelPer"
-        Me.panelPer.Size = New System.Drawing.Size(633, 512)
+        Me.panelPer.Size = New System.Drawing.Size(1005, 675)
         Me.panelPer.TabIndex = 10
         '
         'frmPrincipalPersonas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(872, 512)
+        Me.ClientSize = New System.Drawing.Size(1238, 678)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.panelPer)
         Me.Name = "frmPrincipalPersonas"

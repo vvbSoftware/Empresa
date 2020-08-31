@@ -33,5 +33,21 @@
                                  Me.pNom, Me.sNom, Me.pApe, Me.sApe, Me.tel, Me.dir)
     End Function
 
+    Public Function elimPersona(ci) As Boolean
+        Return dbp.deleteP(ci)
+    End Function
+
+    Public Function Buscar(ced As String)
+        Return dbp.buscarPersona(ced)
+    End Function
+
+    Public Function listado()
+        Return dbp.listarPersonas()
+    End Function
+
+    Public Function modificar(id As String, ced As String, pN As String, sN As String, pA As String, sA As String, tel As String, dir As String)
+        Return dbp.update(id, ced, pN, sN, pA, sA, tel, dir)
+    End Function
+
 
 End Class

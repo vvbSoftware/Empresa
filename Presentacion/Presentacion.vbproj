@@ -193,6 +193,15 @@
     <EmbeddedResource Include="Persona\frmAltaP.resx">
       <DependentUpon>frmAltaP.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Persona\frmElimP.resx">
+      <DependentUpon>frmElimP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Persona\frmListarP.resx">
+      <DependentUpon>frmListarP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Persona\frmModifP.resx">
+      <DependentUpon>frmModifP.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Persona\frmPrincipalPersonas.resx">
       <DependentUpon>frmPrincipalPersonas.vb</DependentUpon>
     </EmbeddedResource>
