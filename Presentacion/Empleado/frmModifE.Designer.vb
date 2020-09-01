@@ -72,11 +72,11 @@ Partial Class frmModifE
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Bookman Old Style", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label4.Location = New System.Drawing.Point(25, 129)
+        Me.Label4.Location = New System.Drawing.Point(14, 129)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(97, 16)
+        Me.Label4.Size = New System.Drawing.Size(107, 16)
         Me.Label4.TabIndex = 37
-        Me.Label4.Text = "id Empleado:"
+        Me.Label4.Text = "ced Empleado:"
         '
         'Label1
         '

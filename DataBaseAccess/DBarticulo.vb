@@ -6,12 +6,11 @@ Public Class DBarticulo
 
 
     Public Function insertArt(codigo As Integer, descripcion As String, precio As Double, fecha_fabricacion As String) As Boolean
-        consulta = "insert into articulos values ("
-        consulta = consulta & "'',"
+        consulta = "insert into articulos(`codigo`,`descripcion`, `precio`, `fecha_fabricacion`) values ("
         consulta = consulta & codigo.ToString & ","
         consulta = consulta & "'" & descripcion & "',"
-        consulta = consulta & "'" & fecha_fabricacion & "',"
-        consulta = consulta & "'" & precio.ToString & "');"
+        consulta = consulta & "'" & precio.ToString & "',"
+        consulta = consulta & "'" & fecha_fabricacion & "');"
 
         Return consultaEjecutar(consulta)
     End Function
@@ -22,17 +21,17 @@ Public Class DBarticulo
     End Function
 
     Public Function listadoArt() As DataTable
-        consulta = "select * from articulos"
+        consulta = "select id_articulo, codigo, descripcion, precio, fecha_fabricacion from articulos"
         Return DevolverTabla(consulta)
     End Function
 
     Public Function Buscar(codigo As String) As DataTable
-        consulta = "select * from articulos where codigo=" & codigo & ";"
+        consulta = "select id_articulo, codigo, descripcion, precio, fecha_fabricacion from articulos where codigo='" & codigo & "';"
         Return DevolverTabla(consulta)
     End Function
 
-    Public Function modifcar(id, cod, desc, fech, precio) As Boolean
-        consulta = "update articulos set"
+    Public Function modifcar(id, cod, desc, precio, fech) As Boolean
+        consulta = "update articulos set "
         consulta = consulta & "codigo='" & cod.ToString & "',"
         consulta = consulta & "descripcion='" & desc & "',"
         consulta = consulta & "fecha_fabricacion='" & fech & "',"

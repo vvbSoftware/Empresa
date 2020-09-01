@@ -39,12 +39,12 @@ Public Class DBpersona
     End Function
 
     Public Function buscarPersona(ced) As DataTable
-        Dim consulta As String = "select * from personas where cedula=" & ced & ";"
+        Dim consulta As String = "select id_persona, cedula, primer_nombre, segundo_nombre, primer_apellido, segundo_apellido, telefono, direccion from personas where cedula=" & ced & ";"
         Return db.DevolverTabla(consulta)
     End Function
 
     Public Function listarPersonas() As DataTable
-        Dim consulta As String = "select * from personas"
+        Dim consulta As String = "select id_persona, cedula, primer_nombre, segundo_nombre, primer_apellido, segundo_apellido, telefono, direccion from personas"
         Return db.DevolverTabla(consulta)
     End Function
 

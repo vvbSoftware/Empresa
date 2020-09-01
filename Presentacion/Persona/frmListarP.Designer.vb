@@ -31,9 +31,12 @@ Partial Class frmListarP
         '
         'dgvListado
         '
+        Me.dgvListado.AllowUserToAddRows = False
+        Me.dgvListado.AllowUserToDeleteRows = False
         Me.dgvListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvListado.Location = New System.Drawing.Point(9, 186)
         Me.dgvListado.Name = "dgvListado"
+        Me.dgvListado.ReadOnly = True
         Me.dgvListado.Size = New System.Drawing.Size(969, 438)
         Me.dgvListado.TabIndex = 0
         Me.dgvListado.Visible = False

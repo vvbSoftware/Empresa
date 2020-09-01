@@ -23,8 +23,8 @@ Public Class Articulo
         Return dba.insertArt(Me.codigo, Me.descripcion, Me.precio, Me.fecha_fabricacion)
     End Function
 
-    Public Function removeArt(cod) As Boolean
-        Return dba.deleteArt(cod)
+    Public Function removeArt(idArt) As Boolean
+        Return dba.deleteArt(idArt)
     End Function
 
     Public Function listarArt()

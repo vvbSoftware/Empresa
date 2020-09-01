@@ -8,6 +8,15 @@ Public Class frmAltaP
             Dim per As New Empresa.Persona(txtci.Text, txtPnom.Text, txtSnom.Text, txtPape.Text, txtSape.Text, txtTel.Text, txtDir.Text)
             If (per.addPersona()) = True Then
                 MsgBox("Persona Agregada correctamente!")
+                txtci.Text = ""
+                txtDir.Text = ""
+                txtPape.Text = ""
+                txtPnom.Text = ""
+                txtSape.Text = ""
+                txtSnom.Text = ""
+                txtTel.Text = ""
+            Else
+                MsgBox("Error de conexion")
             End If
         End If
     End Sub

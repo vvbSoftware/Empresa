@@ -3,12 +3,15 @@ Public Class DBempleado
     Inherits DBaccess
 
     Dim db As New DBaccess
-    Public Function InsertEmpleado(ci As String, idTipo As Integer, sueldoMensual As Double) As Boolean
+
+
+    Public Function InsertEmpleado(ci As String, nomTipo As String, sueldoMensual As Double) As Boolean
         Dim consultaParaIdPersona As String = "(select id_persona from personas where cedula=" & ci & ")"
+        Dim consultaParaIdTipoEmp As String = "(select id_tipo_empleado from tipos_empleados where tipo_empleado='" & nomTipo.ToString & "')"
         Dim consulta As String = "insert into empleados VALUES ("
         consulta = consulta & "'',"
         consulta = consulta & consultaParaIdPersona.ToString & ","
-        consulta = consulta & "'" & idTipo.ToString & "',"
+        consulta = consulta & consultaParaIdTipoEmp.ToString & ","
         consulta = consulta & "'" & sueldoMensual.ToString & "')"
 
         Try

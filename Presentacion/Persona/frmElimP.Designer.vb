@@ -88,11 +88,14 @@ Partial Class frmElimP
         '
         'dgvPersona
         '
+        Me.dgvPersona.AllowUserToAddRows = False
+        Me.dgvPersona.AllowUserToDeleteRows = False
         Me.dgvPersona.BackgroundColor = System.Drawing.SystemColors.ActiveCaption
         Me.dgvPersona.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvPersona.Location = New System.Drawing.Point(12, 177)
         Me.dgvPersona.Name = "dgvPersona"
-        Me.dgvPersona.Size = New System.Drawing.Size(965, 94)
+        Me.dgvPersona.ReadOnly = True
+        Me.dgvPersona.Size = New System.Drawing.Size(965, 111)
         Me.dgvPersona.TabIndex = 31
         Me.dgvPersona.Visible = False
         '

@@ -25,6 +25,7 @@ Partial Class frmPrincipalEmpleados
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmPrincipalEmpleados))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnGestTipoEmp = New System.Windows.Forms.Button()
         Me.btnVolver = New System.Windows.Forms.Button()
         Me.btnElim = New System.Windows.Forms.Button()
         Me.btnAddEmp = New System.Windows.Forms.Button()
@@ -48,16 +49,35 @@ Partial Class frmPrincipalEmpleados
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.btnGestTipoEmp)
         Me.Panel1.Controls.Add(Me.btnVolver)
         Me.Panel1.Controls.Add(Me.btnElim)
         Me.Panel1.Controls.Add(Me.btnAddEmp)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.btnListar)
         Me.Panel1.Controls.Add(Me.btnModif)
-        Me.Panel1.Location = New System.Drawing.Point(1, -2)
+        Me.Panel1.Location = New System.Drawing.Point(0, -2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(239, 673)
         Me.Panel1.TabIndex = 11
+        '
+        'btnGestTipoEmp
+        '
+        Me.btnGestTipoEmp.FlatAppearance.BorderSize = 0
+        Me.btnGestTipoEmp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnGestTipoEmp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnGestTipoEmp.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnGestTipoEmp.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGestTipoEmp.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnGestTipoEmp.Image = CType(resources.GetObject("btnGestTipoEmp.Image"), System.Drawing.Image)
+        Me.btnGestTipoEmp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnGestTipoEmp.Location = New System.Drawing.Point(12, 498)
+        Me.btnGestTipoEmp.Name = "btnGestTipoEmp"
+        Me.btnGestTipoEmp.Size = New System.Drawing.Size(215, 80)
+        Me.btnGestTipoEmp.TabIndex = 7
+        Me.btnGestTipoEmp.Text = "Gestinar Tipo de Empleados"
+        Me.btnGestTipoEmp.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnGestTipoEmp.UseVisualStyleBackColor = True
         '
         'btnVolver
         '
@@ -149,9 +169,9 @@ Partial Class frmPrincipalEmpleados
         '
         Me.panelEmp.BackColor = System.Drawing.Color.Transparent
         Me.panelEmp.BackgroundImage = CType(resources.GetObject("panelEmp.BackgroundImage"), System.Drawing.Image)
-        Me.panelEmp.Location = New System.Drawing.Point(240, 0)
+        Me.panelEmp.Location = New System.Drawing.Point(239, 0)
         Me.panelEmp.Name = "panelEmp"
-        Me.panelEmp.Size = New System.Drawing.Size(1005, 675)
+        Me.panelEmp.Size = New System.Drawing.Size(1005, 671)
         Me.panelEmp.TabIndex = 12
         '
         'frmPrincipalEmpleados
@@ -180,4 +200,5 @@ Partial Class frmPrincipalEmpleados
     Friend WithEvents btnModif As Button
     Friend WithEvents panelEmp As Panel
     Friend WithEvents btnVolver As Button
+    Friend WithEvents btnGestTipoEmp As Button
 End Class

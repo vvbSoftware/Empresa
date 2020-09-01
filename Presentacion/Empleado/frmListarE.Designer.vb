@@ -31,9 +31,12 @@ Partial Class frmListarE
         '
         'dgvListarE
         '
+        Me.dgvListarE.AllowUserToAddRows = False
+        Me.dgvListarE.AllowUserToDeleteRows = False
         Me.dgvListarE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvListarE.Location = New System.Drawing.Point(13, 196)
         Me.dgvListarE.Name = "dgvListarE"
+        Me.dgvListarE.ReadOnly = True
         Me.dgvListarE.Size = New System.Drawing.Size(964, 428)
         Me.dgvListarE.TabIndex = 0
         '

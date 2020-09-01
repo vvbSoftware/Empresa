@@ -19,12 +19,12 @@
             txtIdP.Text = dgvModifP.Item(0, i).Value().ToString
             txtcedula.Text = dgvModifP.Item(1, i).Value().ToString
             'txtFoto.Text = dgvModifP.Item(2, i).Value()
-            txtPnom.Text = dgvModifP.Item(3, i).Value()
-            txtSnom.Text = dgvModifP.Item(4, i).Value().ToString
-            txtPape.Text = dgvModifP.Item(5, i).Value()
-            txtSape.Text = dgvModifP.Item(6, i).Value().ToString
-            txtTel.Text = dgvModifP.Item(7, i).Value().ToString
-            txtDir.Text = dgvModifP.Item(8, i).Value()
+            txtPnom.Text = dgvModifP.Item(2, i).Value()
+            txtSnom.Text = dgvModifP.Item(3, i).Value().ToString
+            txtPape.Text = dgvModifP.Item(4, i).Value()
+            txtSape.Text = dgvModifP.Item(5, i).Value().ToString
+            txtTel.Text = dgvModifP.Item(6, i).Value().ToString
+            txtDir.Text = dgvModifP.Item(7, i).Value()
         Catch ex As Exception
             MsgBox("Error: " & ex.Message)
         End Try
@@ -55,5 +55,6 @@
             MsgBox("Persona editada correctamente!")
         End If
     End Sub
+
 
 End Class

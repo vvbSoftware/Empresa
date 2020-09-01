@@ -21,4 +21,8 @@
     Private Sub btnElim_Click(sender As Object, e As EventArgs) Handles btnElim.Click
         frmIn.OpenChildForm(frmBajaE, panelEmp)
     End Sub
+
+    Private Sub btnGestTipoEmp_Click(sender As Object, e As EventArgs) Handles btnGestTipoEmp.Click
+        frmIn.OpenChildForm(frmGestionTipoEmp, panelEmp)
+    End Sub
 End Class

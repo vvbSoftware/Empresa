@@ -44,9 +44,12 @@ Partial Class frmBajaE
         '
         'dgvBaja
         '
+        Me.dgvBaja.AllowUserToAddRows = False
+        Me.dgvBaja.AllowUserToDeleteRows = False
         Me.dgvBaja.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvBaja.Location = New System.Drawing.Point(12, 151)
         Me.dgvBaja.Name = "dgvBaja"
+        Me.dgvBaja.ReadOnly = True
         Me.dgvBaja.Size = New System.Drawing.Size(965, 306)
         Me.dgvBaja.TabIndex = 25
         '

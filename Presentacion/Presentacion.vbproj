@@ -75,6 +75,30 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Articulos\frmAddArt.Designer.vb">
+      <DependentUpon>frmAddArt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Articulos\frmAddArt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Articulos\frmDelArt.Designer.vb">
+      <DependentUpon>frmDelArt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Articulos\frmDelArt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Articulos\frmListarArt.Designer.vb">
+      <DependentUpon>frmListarArt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Articulos\frmListarArt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Articulos\frmModifArt.Designer.vb">
+      <DependentUpon>frmModifArt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Articulos\frmModifArt.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Articulos\frmPrincipalArticulos.Designer.vb">
       <DependentUpon>frmPrincipalArticulos.vb</DependentUpon>
     </Compile>
@@ -91,6 +115,12 @@
       <DependentUpon>frmBajaE.vb</DependentUpon>
     </Compile>
     <Compile Include="Empleado\frmBajaE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\frmGestionTipoEmp.Designer.vb">
+      <DependentUpon>frmGestionTipoEmp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\frmGestionTipoEmp.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Empleado\frmListarE.Designer.vb">
@@ -166,11 +196,29 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Articulos\frmAddArt.resx">
+      <DependentUpon>frmAddArt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Articulos\frmDelArt.resx">
+      <DependentUpon>frmDelArt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Articulos\frmListarArt.resx">
+      <DependentUpon>frmListarArt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Articulos\frmModifArt.resx">
+      <DependentUpon>frmModifArt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Articulos\frmPrincipalArticulos.resx">
+      <DependentUpon>frmPrincipalArticulos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Empleado\frmAltaE.resx">
       <DependentUpon>frmAltaE.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Empleado\frmBajaE.resx">
       <DependentUpon>frmBajaE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado\frmGestionTipoEmp.resx">
+      <DependentUpon>frmGestionTipoEmp.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Empleado\frmListarE.resx">
       <DependentUpon>frmListarE.vb</DependentUpon>

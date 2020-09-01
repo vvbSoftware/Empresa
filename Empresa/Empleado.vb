@@ -2,17 +2,17 @@
 Imports DataBaseAccess
 Imports DataBaseAccess.DBempleado
 Public Class Empleado : Inherits Persona
-    Private idTipo As Integer
+    Private TipoEmp As String
     Private sueldoMensual As Double
 
     Public Sub New(ciPersona As String, pNom As String, sNom As String, pApe As String, sApe As String, tel As String, dir As String, idEmp As Integer, idTipo As Integer, sueldoMensual As Double)
         MyBase.New(ciPersona, pNom, sNom, pApe, sApe, tel, dir)
-        Me.idTipo = idTipo
+        Me.TipoEmp = idTipo
         Me.sueldoMensual = sueldoMensual
     End Sub
 
-    Public Sub New(idTipo As Integer, sueldoMensual As Double)
-        Me.idTipo = idTipo
+    Public Sub New(tipoEmp As String, sueldoMensual As Double)
+        Me.TipoEmp = tipoEmp
         Me.sueldoMensual = sueldoMensual
     End Sub
 
@@ -22,7 +22,7 @@ Public Class Empleado : Inherits Persona
     Dim dbe As New DBempleado
 
     Public Function addEmpleado(ci) As Boolean
-        Return dbe.InsertEmpleado(ci, Me.idTipo, Me.sueldoMensual)
+        Return dbe.InsertEmpleado(ci, Me.TipoEmp, Me.sueldoMensual)
     End Function
 
     Public Function cargarTipoEmp()

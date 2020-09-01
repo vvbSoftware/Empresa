@@ -115,7 +115,8 @@ Partial Class frmAltaE
         '
         Me.cbTipoEmp.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.cbTipoEmp.FormattingEnabled = True
-        Me.cbTipoEmp.Location = New System.Drawing.Point(801, 196)
+        Me.cbTipoEmp.Items.AddRange(New Object() {"OPERATIVO", "ADMINISTRATIVO", "GERENTE"})
+        Me.cbTipoEmp.Location = New System.Drawing.Point(829, 383)
         Me.cbTipoEmp.Name = "cbTipoEmp"
         Me.cbTipoEmp.Size = New System.Drawing.Size(160, 21)
         Me.cbTipoEmp.TabIndex = 24
